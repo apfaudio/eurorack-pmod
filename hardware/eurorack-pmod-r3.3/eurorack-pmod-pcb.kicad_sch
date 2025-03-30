@@ -11131,6 +11131,14 @@
 				(hide yes)
 			)
 		)
+		(property "lcsc#" " C914913"
+			(at 68.58 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "23"
 			(uuid "8db3a34f-2674-46b9-b934-306f389538c6")
 		)
