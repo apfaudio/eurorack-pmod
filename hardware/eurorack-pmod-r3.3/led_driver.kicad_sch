@@ -6641,7 +6641,7 @@
 				)
 			)
 		)
-		(property "Value" "100.0uF"
+		(property "Value" "22.0uF"
 			(at 58.42 77.47 0)
 			(effects
 				(font
@@ -6649,7 +6649,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 63.5 77.47 0)
 			(effects
 				(font
@@ -6693,7 +6693,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C27279"
+		(property "lcsc#" "C12891"
 			(at 63.5 77.47 0)
 			(effects
 				(font

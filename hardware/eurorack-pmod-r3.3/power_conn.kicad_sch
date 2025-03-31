@@ -1480,168 +1480,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized_Small"
-				(at 0.254 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Polarized_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.8542)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -3136,6 +2974,22 @@
 		(uuid "f3d06f31-034f-4bc4-8122-2c2c96c05c0e")
 	)
 	(no_connect
+		(at -53.34 86.36)
+		(uuid "1d952aa2-f3ec-45f1-9be9-854e20e15f54")
+	)
+	(no_connect
+		(at -54.61 86.36)
+		(uuid "341888d1-780a-4c87-bfe0-37e795486af0")
+	)
+	(no_connect
+		(at -54.61 85.09)
+		(uuid "a435614e-dac7-4996-97f7-8e1f8cd9d7dd")
+	)
+	(no_connect
+		(at -53.34 91.44)
+		(uuid "c3eeb46e-7cac-46ab-bb61-b12be3349c3e")
+	)
+	(no_connect
 		(at 148.844 41.148)
 		(uuid "cabc72a5-7931-4ef8-894e-a77c99c0256a")
 	)
@@ -4497,7 +4351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 94.107 27.559 0)
 		(mirror y)
 		(unit 1)
@@ -4522,7 +4376,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 94.107 27.559 0)
 			(effects
 				(font
@@ -4540,12 +4394,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 94.107 27.559 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -4566,7 +4421,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C782264"
+		(property "lcsc#" "C12891"
 			(at 94.107 27.559 0)
 			(effects
 				(font
@@ -5008,7 +4863,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 93.98 47.625 0)
 		(mirror y)
 		(unit 1)
@@ -5033,7 +4888,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 93.98 47.625 0)
 			(effects
 				(font
@@ -5051,12 +4906,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 93.98 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -5077,7 +4933,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C782264"
+		(property "lcsc#" "C12891"
 			(at 93.98 47.625 0)
 			(effects
 				(font
@@ -5483,7 +5339,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 75.311 27.559 0)
 		(mirror y)
 		(unit 1)
@@ -5508,7 +5364,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 75.311 27.559 0)
 			(effects
 				(font
@@ -5526,12 +5382,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 75.311 27.559 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -5552,7 +5409,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C782264"
+		(property "lcsc#" "C12891"
 			(at 75.311 27.559 0)
 			(effects
 				(font
@@ -6154,7 +6011,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 93.98 113.665 0)
 		(mirror y)
 		(unit 1)
@@ -6171,7 +6028,7 @@
 				)
 			)
 		)
-		(property "Value" "100.0uF"
+		(property "Value" "22.0uF"
 			(at 88.9 113.665 0)
 			(effects
 				(font
@@ -6179,7 +6036,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 93.98 113.665 0)
 			(effects
 				(font
@@ -6197,12 +6054,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 93.98 113.665 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -6223,7 +6081,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C27279"
+		(property "lcsc#" "C12891"
 			(at 93.98 113.665 0)
 			(effects
 				(font
@@ -6920,7 +6778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 67.31 98.425 0)
 		(mirror y)
 		(unit 1)
@@ -6937,7 +6795,7 @@
 				)
 			)
 		)
-		(property "Value" "100.0uF"
+		(property "Value" "22.0uF"
 			(at 62.23 98.425 0)
 			(effects
 				(font
@@ -6945,7 +6803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 67.31 98.425 0)
 			(effects
 				(font
@@ -6954,7 +6812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 67.31 98.425 0)
 			(effects
 				(font
@@ -6963,12 +6821,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 67.31 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -6980,7 +6839,7 @@
 				(hide yes)
 			)
 		)
-		(property "mfg#" "TLJA107M006R0800"
+		(property "mfg#" ""
 			(at 64.77 108.585 0)
 			(effects
 				(font
@@ -6989,7 +6848,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C27279"
+		(property "lcsc#" "C12891"
 			(at 67.31 98.425 0)
 			(effects
 				(font
@@ -7703,7 +7562,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 75.184 47.752 0)
 		(mirror y)
 		(unit 1)
@@ -7728,7 +7587,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 75.184 47.752 0)
 			(effects
 				(font
@@ -7746,12 +7605,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 75.184 47.752 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -7772,7 +7632,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C782264"
+		(property "lcsc#" "C12891"
 			(at 75.184 47.752 0)
 			(effects
 				(font
@@ -8100,7 +7960,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
+		(lib_id "Device:C_Small")
 		(at 100.33 97.155 0)
 		(mirror y)
 		(unit 1)
@@ -8117,7 +7977,7 @@
 				)
 			)
 		)
-		(property "Value" "100.0uF"
+		(property "Value" "22.0uF"
 			(at 95.25 97.155 0)
 			(effects
 				(font
@@ -8125,7 +7985,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 100.33 97.155 0)
 			(effects
 				(font
@@ -8143,12 +8003,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 100.33 97.155 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "dig#" ""
@@ -8169,7 +8030,7 @@
 				(hide yes)
 			)
 		)
-		(property "lcsc#" "C27279"
+		(property "lcsc#" "C12891"
 			(at 100.33 97.155 0)
 			(effects
 				(font
