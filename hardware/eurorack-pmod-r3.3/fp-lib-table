@@ -4,4 +4,5 @@
   (lib (name "AudioJacksFixed")(type "KiCad")(uri "/home/seb/dev/eurorack-pmod/hardware/libs/custom/AudioJacksFixed.pretty")(options "")(descr ""))
   (lib (name "BournsEncoders")(type "KiCad")(uri "/home/seb/dev/eurorack-pmod/hardware/libs/custom/BournsEncoders.pretty")(options "")(descr ""))
   (lib (name "ffc-ctxj")(type "KiCad")(uri "/home/seb/dev/eurorack-pmod/hardware/libs/ffc-ctxj.pretty")(options "")(descr ""))
+  (lib (name "LLP1006-2M")(type "KiCad")(uri "/home/seb/dev/eurorack-pmod/hardware/libs/custom/LLP1006-2M.pretty")(options "")(descr ""))
 )

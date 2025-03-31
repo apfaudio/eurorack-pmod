@@ -4007,7 +4007,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LLP1006-2M"
+		(property "Value" "VBUS05L1"
 			(at 35.56 50.7999 90)
 			(effects
 				(font
@@ -4016,7 +4016,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LLP1006-2M:VISHAY-LLP1006-2M"
 			(at 33.02 49.53 0)
 			(effects
 				(font
@@ -5587,7 +5587,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "LLP1006-2M"
+		(property "Value" "VBUS05L1"
 			(at 34.29 118.1099 90)
 			(effects
 				(font
@@ -5596,7 +5596,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LLP1006-2M:VISHAY-LLP1006-2M"
 			(at 31.75 116.84 0)
 			(effects
 				(font
