@@ -1503,6 +1503,210 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:MMBFJ111"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MMBFJ111"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBFJ113-D.PDF"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "20mA min, 35V, 30mOhm max, 3-10V Vgs(off), N-Channel JFET, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "N-Channel FET Transistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MMBFJ111_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.016 0.381) (xy -1.016 -0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.397) (xy 0.254 1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.397) (xy 0.254 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MMBFJ111_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3VA"
 			(power)
 			(pin_names
@@ -2044,6 +2248,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 115.57) (xy 29.21 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "535e8820-c0f0-49f4-a12f-2af201a68695")
+	)
+	(wire
+		(pts
 			(xy 80.01 45.72) (xy 80.01 50.8)
 		)
 		(stroke
@@ -2104,6 +2318,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 105.41) (xy 45.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b2b20fd-5e77-468f-9906-b7e8e86b308d")
+	)
+	(wire
+		(pts
 			(xy 49.7891 109.22) (xy 46.99 109.22)
 		)
 		(stroke
@@ -2141,6 +2365,16 @@
 			(type default)
 		)
 		(uuid "8a0a4016-2f66-4519-ba5b-fbd0c975fd88")
+	)
+	(wire
+		(pts
+			(xy 24.13 58.42) (xy 24.13 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cc4aedd-229f-472a-a9af-7c98bed001a5")
 	)
 	(wire
 		(pts
@@ -2264,6 +2498,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 48.26) (xy 40.64 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1fb5f99-ef22-47b0-b226-f7c765e11365")
+	)
+	(wire
+		(pts
 			(xy 29.21 100.33) (xy 36.83 100.33)
 		)
 		(stroke
@@ -2301,6 +2545,16 @@
 			(type default)
 		)
 		(uuid "cce9dd3e-0dad-49b5-b0a6-f9f5181597eb")
+	)
+	(wire
+		(pts
+			(xy 29.21 105.41) (xy 45.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce3a14c3-08d4-48e5-a4a0-67537ebb0000")
 	)
 	(wire
 		(pts
@@ -2351,6 +2605,16 @@
 			(type default)
 		)
 		(uuid "e75e7e4a-19cf-419e-b3d1-afd10b44a00d")
+	)
+	(wire
+		(pts
+			(xy 40.64 48.26) (xy 40.64 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0067b15-2074-404e-b8a8-16a57cbcced2")
 	)
 	(wire
 		(pts
@@ -2467,6 +2731,28 @@
 			(justify right)
 		)
 		(uuid "6ef925d4-fd0e-4036-9824-70f99dabd986")
+	)
+	(hierarchical_label "MUTE1"
+		(shape input)
+		(at 16.51 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7f67d8a0-3497-4162-8b8f-66d0ee113801")
+	)
+	(hierarchical_label "MUTE2"
+		(shape input)
+		(at 21.59 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8dde7bc7-930f-49c5-bb04-9e1fb9539849")
 	)
 	(hierarchical_label "CAP_SENSE2"
 		(shape bidirectional)
@@ -2971,6 +3257,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 24.13 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19fa08a9-f421-4fb2-8d3c-06b96359e423")
+		(property "Reference" "#PWR0137"
+			(at 24.13 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.098 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 24.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0a1f9e3-e045-4dda-b89c-423c6fd1f3c7")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "#PWR0138")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Varistor")
 		(at 80.01 111.76 0)
 		(unit 1)
@@ -3406,6 +3761,75 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 29.21 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55c07041-b107-4a45-a1ae-f6904ad81792")
+		(property "Reference" "#PWR0139"
+			(at 29.21 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.178 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abc68fc1-cf9f-4d52-b415-6cb74782b098")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -4024,6 +4448,166 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:MMBFJ111")
+		(at 21.59 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9af8694c-b246-419a-8d56-0bc0dfa9a6ae")
+		(property "Reference" "Q2"
+			(at 26.67 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBFJ111"
+			(at 26.67 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 26.67 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBFJ113-D.PDF"
+			(at 26.67 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20mA min, 35V, 30mOhm max, 3-10V Vgs(off), N-Channel JFET, SOT-23"
+			(at 21.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4d9fac13-660a-4148-b136-3e60a8a620d9")
+		)
+		(pin "2"
+			(uuid "6c1d582a-3b69-4663-b3f8-c6cee1940de3")
+		)
+		(pin "1"
+			(uuid "2c0c2f32-7ad5-4b56-be14-d78601f4ebda")
+		)
+		(instances
+			(project ""
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "Q3")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:MMBFJ111")
+		(at 26.67 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ed51dfc-7848-47c0-9e03-cbe2491547a7")
+		(property "Reference" "Q4"
+			(at 31.75 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBFJ111"
+			(at 31.75 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 31.75 112.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBFJ113-D.PDF"
+			(at 31.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20mA min, 35V, 30mOhm max, 3-10V Vgs(off), N-Channel JFET, SOT-23"
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "94a95ec5-5ece-45c8-8878-e1a116edb2f2")
+		)
+		(pin "2"
+			(uuid "df769f88-8e71-443f-a003-69f3524e1903")
+		)
+		(pin "1"
+			(uuid "749ec04d-7dda-4b1c-a772-c8262d9a7a3f")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "Q5")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
