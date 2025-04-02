@@ -5082,6 +5082,16 @@
 		)
 		(uuid "80134556-d83f-47ea-b005-8fe26403fee7")
 	)
+	(wire
+		(pts
+			(xy 177.8 41.91) (xy 177.8 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8106a941-33b6-4ee5-aabe-d7b24949ab03")
+	)
 	(polyline
 		(pts
 			(xy 164.465 192.405) (xy 108.585 192.405)
@@ -5181,16 +5191,6 @@
 			(type default)
 		)
 		(uuid "8f5ad5b7-5fb5-4725-b3d1-dbd486fb3755")
-	)
-	(wire
-		(pts
-			(xy 185.42 48.26) (xy 177.8 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91a5772a-f9a2-4cb3-88b5-70037f328b22")
 	)
 	(wire
 		(pts
@@ -5301,6 +5301,16 @@
 			(type default)
 		)
 		(uuid "a9a8759b-f73b-4261-865d-af4bfa19b393")
+	)
+	(wire
+		(pts
+			(xy 177.8 48.26) (xy 185.42 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaf6c27a-bd88-4502-8d63-8441c1e9b43c")
 	)
 	(wire
 		(pts
@@ -5441,16 +5451,6 @@
 			(type default)
 		)
 		(uuid "c3aebfeb-3170-49a7-a66b-52985f9df016")
-	)
-	(wire
-		(pts
-			(xy 177.8 40.64) (xy 161.29 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c59b3815-87a3-436f-a67d-302b5b9bc75a")
 	)
 	(wire
 		(pts
@@ -5604,7 +5604,7 @@
 	)
 	(wire
 		(pts
-			(xy 178.435 50.8) (xy 185.42 50.8)
+			(xy 177.8 50.8) (xy 185.42 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5701,16 +5701,6 @@
 			(type default)
 		)
 		(uuid "fd10d72d-c63e-4b9b-b664-b60fb2c47fba")
-	)
-	(wire
-		(pts
-			(xy 177.8 48.26) (xy 177.8 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd89567e-4b20-43af-ab53-e3cf211ea4e5")
 	)
 	(label "JACK_DETECT_OUT1"
 		(at 141.605 172.085 0)
@@ -10078,6 +10068,70 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3VA")
+		(at 177.8 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85748fbd-56d7-4591-871f-85dd77639b02")
+		(property "Reference" "#PWR020"
+			(at 177.8 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 180.34 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f52c4cbe-3a13-4600-84a0-2edac2a0de34")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL074")
 		(at 158.75 101.6 0)
 		(unit 5)
@@ -12132,7 +12186,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 178.435 50.8 270)
+		(at 177.8 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12140,7 +12194,7 @@
 		(dnp no)
 		(uuid "c6d732df-a33c-43fa-a4ec-dd2ea754a7b2")
 		(property "Reference" "#PWR023"
-			(at 172.085 50.8 0)
+			(at 177.8 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12149,7 +12203,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.815 50.8 90)
+			(at 176.022 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12158,7 +12212,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 178.435 50.8 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12167,7 +12221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 178.435 50.8 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12176,7 +12230,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 178.435 50.8 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

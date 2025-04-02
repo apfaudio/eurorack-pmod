@@ -2126,6 +2126,147 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Regulator_Linear:AZ1117-3.3"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AZ1117-3.3"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Fixed Voltage Regulator 1A Positive LDO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223* SOT?89* TO?220* TO?252* TO?263*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AZ1117-3.3_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AZ1117-3.3_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_names
@@ -2884,6 +3025,12 @@
 		(uuid "382c1b08-3bbe-4961-9507-a37b8148b5c5")
 	)
 	(junction
+		(at 82.55 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d9e9ca4-1c59-4064-a8af-8022a7ebbc46")
+	)
+	(junction
 		(at 77.089 50.292)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2902,7 +3049,7 @@
 		(uuid "568905a2-c865-408c-a021-ead81bfc2d0e")
 	)
 	(junction
-		(at 95.885 111.125)
+		(at 84.455 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5edcd482-e467-4cc6-bd2a-f50b1119f3e0")
@@ -2938,10 +3085,10 @@
 		(uuid "89ef74e1-275c-421e-a8ea-725a05514ec8")
 	)
 	(junction
-		(at 95.885 116.205)
+		(at 46.99 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "937f3979-b141-4206-9886-34170ad3a210")
+		(uuid "99f86616-abde-4c32-aae3-c4144f9d47ce")
 	)
 	(junction
 		(at 67.31 88.9)
@@ -2950,16 +3097,16 @@
 		(uuid "adabdfd3-6a10-4e8f-a850-04faa3df2879")
 	)
 	(junction
+		(at 82.55 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9410454-682e-4c4c-b631-5e032f843a2a")
+	)
+	(junction
 		(at 102.235 99.695)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c22bac55-1477-418a-b479-d6c077a7d763")
-	)
-	(junction
-		(at 67.31 92.075)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db8169ae-64a6-4720-8dd9-dcf76b59489f")
 	)
 	(junction
 		(at 40.64 33.02)
@@ -3022,16 +3169,6 @@
 			(type default)
 		)
 		(uuid "06d89e34-efb0-4a92-98a5-e67d47f4d1cf")
-	)
-	(wire
-		(pts
-			(xy 93.98 116.205) (xy 95.885 116.205)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "076ea63a-49cb-451b-bcf0-a3a2cb7164f0")
 	)
 	(wire
 		(pts
@@ -3125,7 +3262,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 111.125) (xy 97.79 111.125)
+			(xy 46.99 137.16) (xy 46.99 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d1eb7c-8839-41f4-9f1e-a224090f11a0")
+	)
+	(wire
+		(pts
+			(xy 84.455 129.54) (xy 86.36 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3295,7 +3442,7 @@
 	)
 	(polyline
 		(pts
-			(xy 113.03 67.945) (xy 113.03 128.905)
+			(xy 113.03 67.945) (xy 113.03 150.495)
 		)
 		(stroke
 			(width 0)
@@ -3365,17 +3512,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 116.205) (xy 97.79 116.205)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "586a9b75-018a-4185-b34f-357af51e25f9")
-	)
-	(wire
-		(pts
-			(xy 95.885 116.205) (xy 95.885 116.84)
+			(xy 82.55 134.62) (xy 82.55 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3415,7 +3552,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.885 110.49) (xy 95.885 111.125)
+			(xy 84.455 128.905) (xy 84.455 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3445,6 +3582,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 134.62) (xy 86.36 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b17513-c208-4d92-b619-0b632171ed1d")
+	)
+	(wire
+		(pts
 			(xy 136.144 51.308) (xy 148.844 51.308)
 		)
 		(stroke
@@ -3452,6 +3599,16 @@
 			(type default)
 		)
 		(uuid "6b717be2-0c14-44c2-bc39-5025c9082919")
+	)
+	(wire
+		(pts
+			(xy 46.99 132.08) (xy 46.99 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f533f0-9caa-46c2-83b0-db3041144650")
 	)
 	(wire
 		(pts
@@ -3472,6 +3629,16 @@
 			(type default)
 		)
 		(uuid "7c3e94b9-3645-4c86-bf9f-8df3170b4bae")
+	)
+	(wire
+		(pts
+			(xy 64.77 137.16) (xy 64.77 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d18f8ef-fb43-4a18-883a-e457b97fe825")
 	)
 	(wire
 		(pts
@@ -3525,7 +3692,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 111.125) (xy 95.885 111.125)
+			(xy 82.55 129.54) (xy 84.455 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3565,7 +3732,7 @@
 	)
 	(polyline
 		(pts
-			(xy 16.51 67.945) (xy 16.51 128.905)
+			(xy 16.51 67.945) (xy 16.51 150.495)
 		)
 		(stroke
 			(width 0)
@@ -3582,16 +3749,6 @@
 			(type default)
 		)
 		(uuid "936c5568-024b-438c-b3e9-ad968ffbd562")
-	)
-	(wire
-		(pts
-			(xy 74.93 92.075) (xy 76.835 92.075)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "938ddc6f-5d02-44d6-bfa6-2d467b5fb6e3")
 	)
 	(wire
 		(pts
@@ -3715,6 +3872,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 129.54) (xy 82.55 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6a50aff-ab16-4d2b-bd3a-6bb96642c727")
+	)
+	(wire
+		(pts
 			(xy 25.4 38.1) (xy 26.67 38.1)
 		)
 		(stroke
@@ -3745,16 +3912,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 92.075) (xy 67.31 95.885)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c00eb397-e98d-45f5-afe6-47d51def8e5d")
-	)
-	(wire
-		(pts
 			(xy 40.64 30.48) (xy 26.67 30.48)
 		)
 		(stroke
@@ -3762,16 +3919,6 @@
 			(type default)
 		)
 		(uuid "c401f7fe-387f-4db2-a397-763a30038102")
-	)
-	(wire
-		(pts
-			(xy 67.31 92.075) (xy 69.85 92.075)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4806d58-8348-418d-a619-89e12f70b306")
 	)
 	(wire
 		(pts
@@ -3915,13 +4062,23 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 88.9) (xy 67.31 92.075)
+			(xy 67.31 88.9) (xy 67.31 95.885)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e5f6a355-c519-4636-ad7c-5fcf5251d6e7")
+	)
+	(wire
+		(pts
+			(xy 46.99 129.54) (xy 57.15 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a10f8f-c56c-4f4c-9e5c-7447526e97a3")
 	)
 	(polyline
 		(pts
@@ -3965,7 +4122,7 @@
 	)
 	(polyline
 		(pts
-			(xy 113.03 128.905) (xy 16.51 128.905)
+			(xy 113.03 150.495) (xy 16.51 150.495)
 		)
 		(stroke
 			(width 0)
@@ -5181,6 +5338,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 46.99 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a479dbf-2145-4861-89eb-ed103ab3140b")
+		(property "Reference" "#PWR015"
+			(at 46.99 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 49.657 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2baa9446-9e03-4879-adaa-f4ffd1f5fc65")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDD")
 		(at 48.26 86.36 90)
 		(unit 1)
@@ -5550,7 +5772,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 97.79 113.665 0)
+		(at 86.36 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5559,7 +5781,7 @@
 		(fields_autoplaced yes)
 		(uuid "55903fc6-5c09-44af-8aa1-cda4d912d3ec")
 		(property "Reference" "C14"
-			(at 100.33 112.4012 0)
+			(at 88.9 130.8162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +5790,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 100.33 114.9412 0)
+			(at 88.9 133.3562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5577,7 +5799,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 97.79 113.665 0)
+			(at 86.36 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5586,7 +5808,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_TDK-C1608X7R1E104KT000N_C338036.pdf"
-			(at 97.79 113.665 0)
+			(at 86.36 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5595,7 +5817,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 97.79 113.665 0)
+			(at 86.36 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5603,7 +5825,7 @@
 			)
 		)
 		(property "lcsc#" "C338036"
-			(at 97.79 113.665 0)
+			(at 86.36 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5612,7 +5834,7 @@
 			)
 		)
 		(property "mfg#" "C1608X7R1E104KT000N"
-			(at 97.79 113.665 0)
+			(at 86.36 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5637,7 +5859,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.885 116.84 0)
+		(at 82.55 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5645,7 +5867,7 @@
 		(dnp no)
 		(uuid "591878ee-12ad-4697-82bf-307083121ffd")
 		(property "Reference" "#PWR037"
-			(at 95.885 123.19 0)
+			(at 82.55 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5654,7 +5876,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.885 124.46 90)
+			(at 82.55 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5663,7 +5885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.885 116.84 0)
+			(at 82.55 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5672,7 +5894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.885 116.84 0)
+			(at 82.55 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5681,7 +5903,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 95.885 116.84 0)
+			(at 82.55 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5695,99 +5917,6 @@
 			(project "eurorack-pmod-pcb"
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Ferrite_Small")
-		(at 72.39 92.075 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5aca9e48-7bae-49a3-bec8-732597affee2")
-		(property "Reference" "L4"
-			(at 72.39 90.805 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FERRITE"
-			(at 72.39 94.615 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810311132_Murata-Electronics-BLM18PG121SN1D_C14709.pdf"
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "mfg#" "BLM18PG121SN1D"
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "dig#" ""
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "lcsc#" "C14709"
-			(at 72.39 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6efcb23b-6055-43e1-89aa-50d11a195904")
-		)
-		(pin "2"
-			(uuid "1b623457-e407-43d0-b33e-2d84e2daa1b9")
-		)
-		(instances
-			(project "eurorack-pmod-pcb"
-				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
-					(reference "L4")
 					(unit 1)
 				)
 			)
@@ -6012,7 +6141,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 113.665 0)
+		(at 82.55 132.08 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6021,7 +6150,7 @@
 		(dnp no)
 		(uuid "6e7006f6-0074-4206-a0f4-f1a220faa3e0")
 		(property "Reference" "C10"
-			(at 90.17 111.125 0)
+			(at 78.74 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6029,7 +6158,7 @@
 			)
 		)
 		(property "Value" "22.0uF"
-			(at 88.9 113.665 0)
+			(at 77.47 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6037,7 +6166,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 93.98 113.665 0)
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6046,7 +6175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 113.665 0)
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6055,7 +6184,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 93.98 113.665 0)
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,7 +6193,7 @@
 			)
 		)
 		(property "dig#" ""
-			(at 91.44 121.285 0)
+			(at 80.01 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,7 +6202,7 @@
 			)
 		)
 		(property "mfg#" "TLJA107M006R0800"
-			(at 91.44 123.825 0)
+			(at 80.01 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6082,7 +6211,7 @@
 			)
 		)
 		(property "lcsc#" "C12891"
-			(at 93.98 113.665 0)
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6100,6 +6229,71 @@
 			(project "eurorack-pmod-pcb"
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 46.99 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7012c24f-cdd4-4406-bf2e-28c65f361e93")
+		(property "Reference" "#PWR0145"
+			(at 46.99 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 46.99 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56e1e526-c657-4cd3-b9d0-c8b76b76e142")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -7026,71 +7220,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 76.835 92.075 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf4808c8-e19b-4c3f-9c06-e0a32a4b4438")
-		(property "Reference" "#PWR020"
-			(at 73.025 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3VA"
-			(at 78.74 93.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.835 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.835 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.835 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c8a4576a-7c84-4bde-9ff8-c736fb6c1845")
-		)
-		(instances
-			(project "eurorack-pmod-pcb"
-				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3VA")
-		(at 95.885 110.49 0)
+		(at 84.455 128.905 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7098,7 +7228,7 @@
 		(dnp no)
 		(uuid "c7672855-c0dc-4518-84d8-479319befa73")
 		(property "Reference" "#PWR036"
-			(at 95.885 114.3 0)
+			(at 84.455 132.715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,7 +7237,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 95.885 106.934 0)
+			(at 84.455 125.349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,7 +7245,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.885 110.49 0)
+			(at 84.455 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7124,7 +7254,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.885 110.49 0)
+			(at 84.455 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7133,7 +7263,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 95.885 110.49 0)
+			(at 84.455 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7563,6 +7693,93 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 46.99 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3c739d0-b14d-422a-a41e-a2d52043aefd")
+		(property "Reference" "C33"
+			(at 49.53 133.3562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 49.53 135.8962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111437_TDK-C1608X7R1E104KT000N_C338036.pdf"
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc#" ""
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mfg#" ""
+			(at 46.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db75ae4f-c1d0-48cf-b3a5-54bdecd22782")
+		)
+		(pin "2"
+			(uuid "f7e20513-b800-4828-9b04-923fe0db0120")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 75.184 47.752 0)
 		(mirror y)
 		(unit 1)
@@ -7744,6 +7961,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 64.77 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f50c3601-dff7-4c75-81d3-61c947513733")
+		(property "Reference" "#PWR0144"
+			(at 64.77 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 64.77 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d32e3fb2-f15c-4e30-8fa9-ae3b6ae56051")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "#PWR0144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 97.79 47.625 0)
 		(unit 1)
@@ -7825,6 +8107,87 @@
 			(project "eurorack-pmod-pcb"
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:AZ1117-3.3")
+		(at 64.77 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f61c6141-5499-4773-9e04-4ef2d01f8542")
+		(property "Reference" "U8"
+			(at 64.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AZ1117-3.3"
+			(at 64.77 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 64.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117.pdf"
+			(at 64.77 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263"
+			(at 64.77 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "lcsc#" "C460428"
+			(at 64.77 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01175a58-8603-40f6-959f-2407e9023b04")
+		)
+		(pin "2"
+			(uuid "f2aa9d55-ee14-4205-9c68-8589bd86ec67")
+		)
+		(pin "3"
+			(uuid "cf314ef3-95ef-468e-a1c5-3d17061f2336")
+		)
+		(instances
+			(project ""
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "U8")
 					(unit 1)
 				)
 			)
