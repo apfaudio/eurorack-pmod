@@ -4,7 +4,7 @@
 
 // Force the output DAC to a specific value depending on
 // the position of the uButton (necessary for output cal).
-//`define OUTPUT_CALIBRATION
+`define OUTPUT_CALIBRATION
 
 module top #(
     parameter int W = 16 // sample width, bits
@@ -200,7 +200,7 @@ eurorack_pmod #(
     .sample_adc2(debug_adc2),
     .sample_adc3(debug_adc3),
 `ifdef OUTPUT_CALIBRATION
-    .force_dac_output(button ? -20000 : 20000)
+    .force_dac_output(button ? -32768 : 32767)
 `else
     .force_dac_output(0) // Do not force output.
 `endif

@@ -24,7 +24,7 @@ assign rst_out = rst_i;
 // You can re-generate this using `ecppll` tool. Be careful, the default settings
 // disable PLLRST_ENA and use a different FEEDBK_PATH, make sure they remain.
 
-(* FREQUENCY_PIN_CLKI="25" *)
+(* FREQUENCY_PIN_CLKI="48" *)
 (* FREQUENCY_PIN_CLKOS="12" *)
 (* ICP_CURRENT="12" *) (* LPF_RESISTOR="8" *) (* MFG_ENABLE_FILTEROPAMP="1" *) (* MFG_GMCREF_SEL="2" *)
 EHXPLLL #(
