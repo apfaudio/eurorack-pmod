@@ -1976,6 +1976,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Polyfuse_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at -1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Polyfuse_Small"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resettable fuse PTC PPTC polyfuse polyswitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*polyfuse* *PTC*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Polyfuse_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 0.762) (xy 1.016 -0.762) (xy 1.016 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -0.508 1.27)
+					(end 0.508 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Polyfuse_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.635)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.635)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Diode:US1G"
 			(pin_numbers
 				(hide yes)
@@ -3061,6 +3210,12 @@
 		(uuid "79fe0e85-f9f0-469d-b8b0-e5e1f8db3bed")
 	)
 	(junction
+		(at 40.64 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "811e59c8-ff67-4555-a127-2ba8db4eb5df")
+	)
+	(junction
 		(at 77.089 45.212)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3071,12 +3226,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82eceb8e-6ef6-4854-9896-4c39a35697dd")
-	)
-	(junction
-		(at 40.64 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "88ae9481-6234-4466-a32a-08225c4a6362")
 	)
 	(junction
 		(at 96.012 25.019)
@@ -3103,16 +3252,16 @@
 		(uuid "b9410454-682e-4c4c-b631-5e032f843a2a")
 	)
 	(junction
+		(at 40.64 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba864627-d88c-4656-ace9-86ae93e11725")
+	)
+	(junction
 		(at 102.235 99.695)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c22bac55-1477-418a-b479-d6c077a7d763")
-	)
-	(junction
-		(at 40.64 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7dded0f-2b02-4d3f-bcf6-db63332f5874")
 	)
 	(junction
 		(at 102.235 94.615)
@@ -3312,16 +3461,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 43.18) (xy 52.705 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b517c99-d0d0-4563-b653-84325ef97480")
-	)
-	(wire
-		(pts
 			(xy 39.37 33.02) (xy 40.64 33.02)
 		)
 		(stroke
@@ -3329,16 +3468,6 @@
 			(type default)
 		)
 		(uuid "2b657467-5e98-432c-9b88-bab3aa39a70c")
-	)
-	(wire
-		(pts
-			(xy 40.64 33.02) (xy 41.91 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c4345e1-ad44-4759-a69c-d9025b922db7")
 	)
 	(wire
 		(pts
@@ -3412,16 +3541,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 43.18) (xy 41.91 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c2aab66-7d7c-4c3e-9e7c-2ba05ce1cf9b")
-	)
-	(wire
-		(pts
 			(xy 45.72 86.36) (xy 48.26 86.36)
 		)
 		(stroke
@@ -3452,6 +3571,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 43.18) (xy 49.53 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42552d65-a113-45a8-b0ed-c68887ce3d86")
+	)
+	(wire
+		(pts
 			(xy 137.922 58.928) (xy 148.844 58.928)
 		)
 		(stroke
@@ -3472,7 +3601,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.785 43.18) (xy 60.96 43.18)
+			(xy 62.23 43.18) (xy 65.405 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3589,6 +3718,16 @@
 			(type default)
 		)
 		(uuid "68b17513-c208-4d92-b619-0b632171ed1d")
+	)
+	(wire
+		(pts
+			(xy 46.99 33.02) (xy 49.53 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a7fbc31-ba04-4060-9e4d-231df56d4a33")
 	)
 	(wire
 		(pts
@@ -3752,16 +3891,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 33.02) (xy 52.705 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93fd160f-1bf4-4b23-a854-d5b49b3e83b8")
-	)
-	(wire
-		(pts
 			(xy 135.636 38.608) (xy 148.844 38.608)
 		)
 		(stroke
@@ -3922,6 +4051,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 33.02) (xy 40.64 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9fde8c6-b73f-476a-803c-c8b678e9997b")
+	)
+	(wire
+		(pts
 			(xy 96.012 25.019) (xy 97.917 25.019)
 		)
 		(stroke
@@ -3932,7 +4071,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.785 33.02) (xy 60.96 33.02)
+			(xy 62.23 33.02) (xy 65.405 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3969,6 +4108,16 @@
 			(type default)
 		)
 		(uuid "ce91816f-27f2-456a-9571-df9d616674a0")
+	)
+	(wire
+		(pts
+			(xy 40.64 43.18) (xy 41.91 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0baeae8-2146-45e4-8b96-d32311b0a0b5")
 	)
 	(wire
 		(pts
@@ -4797,7 +4946,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite_Small")
-		(at 55.245 33.02 270)
+		(at 59.69 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4805,7 +4954,7 @@
 		(dnp no)
 		(uuid "113738d7-a001-4e0d-987b-f0c75463a798")
 		(property "Reference" "L1"
-			(at 55.118 37.338 90)
+			(at 59.563 37.338 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4813,7 +4962,7 @@
 			)
 		)
 		(property "Value" "FERRITE"
-			(at 55.245 35.56 90)
+			(at 59.69 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +4970,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4830,7 +4979,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810311132_Murata-Electronics-BLM18PG121SN1D_C14709.pdf"
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4839,7 +4988,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4847,7 +4996,7 @@
 			)
 		)
 		(property "mfg#" "BLM18PG121SN1D"
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4856,7 +5005,7 @@
 			)
 		)
 		(property "dig#" ""
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4865,7 +5014,7 @@
 			)
 		)
 		(property "lcsc#" "C14709"
-			(at 55.245 33.02 0)
+			(at 59.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4956,7 +5105,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 60.96 33.02 0)
+		(at 65.405 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4964,7 +5113,7 @@
 		(dnp no)
 		(uuid "13f934ad-b726-4a56-8aa0-c57ea12c8844")
 		(property "Reference" "#PWR013"
-			(at 60.96 36.83 0)
+			(at 65.405 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,7 +5122,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 63.627 29.21 0)
+			(at 68.072 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4982,7 +5131,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 33.02 0)
+			(at 65.405 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4991,7 +5140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 33.02 0)
+			(at 65.405 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +5149,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 33.02 0)
+			(at 65.405 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5116,7 +5265,7 @@
 	)
 	(symbol
 		(lib_id "Diode:US1G")
-		(at 45.72 43.18 0)
+		(at 53.34 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5124,7 +5273,7 @@
 		(dnp no)
 		(uuid "2803cd55-e219-4d12-bff8-f30e81145b44")
 		(property "Reference" "D2"
-			(at 45.72 45.72 0)
+			(at 53.34 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5132,7 +5281,7 @@
 			)
 		)
 		(property "Value" "1N4007FL"
-			(at 45.593 45.847 0)
+			(at 53.213 45.847 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5141,7 +5290,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 45.72 47.625 0)
+			(at 53.34 47.625 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5150,7 +5299,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
-			(at 45.72 43.18 0)
+			(at 53.34 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5159,7 +5308,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 43.18 0)
+			(at 53.34 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5167,7 +5316,7 @@
 			)
 		)
 		(property "dig#" "1655-1N4007FLCT-ND"
-			(at 55.88 40.64 0)
+			(at 63.5 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5176,7 +5325,7 @@
 			)
 		)
 		(property "mfg#" "1N4007FL"
-			(at 58.42 40.64 0)
+			(at 66.04 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5334,7 @@
 			)
 		)
 		(property "lcsc#" "C2840959"
-			(at 45.72 43.18 0)
+			(at 53.34 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5468,7 +5617,7 @@
 	)
 	(symbol
 		(lib_id "Diode:US1G")
-		(at 45.72 33.02 180)
+		(at 53.34 33.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5476,7 +5625,7 @@
 		(dnp no)
 		(uuid "4f727290-e4d3-4463-8480-de593824850f")
 		(property "Reference" "D1"
-			(at 45.72 35.56 0)
+			(at 53.34 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +5633,7 @@
 			)
 		)
 		(property "Value" "1N4007FL"
-			(at 45.847 30.353 0)
+			(at 53.467 30.353 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5493,7 +5642,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
-			(at 45.72 28.575 0)
+			(at 53.34 28.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5502,7 +5651,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
-			(at 45.72 33.02 0)
+			(at 53.34 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5511,7 +5660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 33.02 0)
+			(at 53.34 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +5668,7 @@
 			)
 		)
 		(property "dig#" "1655-1N4007FLCT-ND"
-			(at 35.56 35.56 0)
+			(at 43.18 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5528,7 +5677,7 @@
 			)
 		)
 		(property "mfg#" "1N4007FL"
-			(at 33.02 35.56 0)
+			(at 40.64 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5537,7 +5686,7 @@
 			)
 		)
 		(property "lcsc#" "C2840959"
-			(at 45.72 33.02 0)
+			(at 53.34 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6843,7 +6992,7 @@
 	)
 	(symbol
 		(lib_id "power:-12V")
-		(at 60.96 43.18 180)
+		(at 65.405 43.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6851,7 +7000,7 @@
 		(dnp no)
 		(uuid "980a821f-9b3b-4a4b-83dc-f788c6b3c84a")
 		(property "Reference" "#PWR014"
-			(at 60.96 45.72 0)
+			(at 65.405 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6860,7 +7009,7 @@
 			)
 		)
 		(property "Value" "-12V"
-			(at 63.627 46.736 0)
+			(at 68.072 46.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6869,7 +7018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 43.18 0)
+			(at 65.405 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6878,7 +7027,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 43.18 0)
+			(at 65.405 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6887,7 +7036,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 43.18 0)
+			(at 65.405 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7219,6 +7368,196 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Polyfuse_Small")
+		(at 44.45 33.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bce314a2-1477-48cc-99ed-2945f4cc51ec")
+		(property "Reference" "F3"
+			(at 44.45 37.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15V 200mA"
+			(at 44.196 35.306 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 49.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(at 44.45 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "lcsc#" "C883103"
+			(at 44.45 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tol" ""
+			(at 44.45 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C883103"
+			(at 44.45 37.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7e46af6-5e33-461a-83d1-37871d96fab5")
+		)
+		(pin "1"
+			(uuid "53aefb53-9dae-4364-9004-0080c6a2f6aa")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Polyfuse_Small")
+		(at 44.45 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c33c479e-da64-47c2-9d89-48d86b9474c6")
+		(property "Reference" "F2"
+			(at 44.45 47.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15V 200mA"
+			(at 44.196 45.466 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 49.53 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
+			(at 44.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "lcsc#" "C883103"
+			(at 44.45 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tol" ""
+			(at 44.45 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C883103"
+			(at 44.45 47.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18aa4490-5c39-4a21-a82a-13efa9aacf6c")
+		)
+		(pin "1"
+			(uuid "8540f135-d68f-4914-a6e3-ea9b6fcb137a")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/8bd0f3ad-78ad-46cf-a63b-58b9dbc835d8"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3VA")
 		(at 84.455 128.905 0)
 		(unit 1)
@@ -7412,7 +7751,7 @@
 	)
 	(symbol
 		(lib_id "Device:L_Ferrite_Small")
-		(at 55.245 43.18 270)
+		(at 59.69 43.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7420,7 +7759,7 @@
 		(dnp no)
 		(uuid "d1dca69e-20a8-443a-9658-e6a5c7715a68")
 		(property "Reference" "L2"
-			(at 55.118 47.752 90)
+			(at 59.563 47.752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7428,7 +7767,7 @@
 			)
 		)
 		(property "Value" "FERRITE"
-			(at 55.245 45.72 90)
+			(at 59.69 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7436,7 +7775,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7445,7 +7784,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810311132_Murata-Electronics-BLM18PG121SN1D_C14709.pdf"
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7454,7 +7793,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7462,7 +7801,7 @@
 			)
 		)
 		(property "mfg#" "BLM18PG121SN1D"
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7471,7 +7810,7 @@
 			)
 		)
 		(property "dig#" ""
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7480,7 +7819,7 @@
 			)
 		)
 		(property "lcsc#" "C14709"
-			(at 55.245 43.18 0)
+			(at 59.69 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
