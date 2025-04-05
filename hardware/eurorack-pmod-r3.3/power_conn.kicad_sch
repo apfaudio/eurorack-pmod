@@ -4379,7 +4379,7 @@
 		)
 		(uuid "6f4bbf7d-f12c-4be5-a646-1ebf5440463f")
 	)
-	(label "C_PDN"
+	(label "C_UNMUTE"
 		(at 46.355 81.28 0)
 		(effects
 			(font
@@ -4389,7 +4389,7 @@
 		)
 		(uuid "72b85626-2fa3-439a-87d1-18d46ca011ea")
 	)
-	(label "C_PDN"
+	(label "C_UNMUTE"
 		(at 137.922 66.548 0)
 		(effects
 			(font
@@ -4492,7 +4492,7 @@
 		)
 		(uuid "ab6a26f4-90c0-4bb9-ab5d-246508b50105")
 	)
-	(hierarchical_label "PDN"
+	(hierarchical_label "UNMUTE"
 		(shape output)
 		(at 46.99 81.28 0)
 		(effects
