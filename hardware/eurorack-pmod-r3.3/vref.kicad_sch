@@ -1060,6 +1060,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Adjust for 3.0 -> 3.3V transition\nTODO: reduce input impedance?"
+		(exclude_from_sim no)
+		(at 111.252 38.354 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "059efb6b-4d2e-4e00-b02c-3c88aaf61bc4")
+	)
 	(text "402K =>\n~80.1K (eff) (top)\nVCOM == 1.66V\n\nValue taken by statistics across a lot of AK4619s"
 		(exclude_from_sim no)
 		(at 112.014 69.596 0)
