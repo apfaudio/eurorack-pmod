@@ -2048,6 +2048,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 118.11) (xy 124.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "005b868e-dc05-4b44-93e1-ae61cb63eb40")
+	)
+	(wire
+		(pts
 			(xy 46.99 109.22) (xy 46.99 105.41)
 		)
 		(stroke
@@ -2278,6 +2288,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 60.96) (xy 100.33 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71e7e93a-2a9a-44e2-b21f-5387a571e0a2")
+	)
+	(wire
+		(pts
 			(xy 114.3 100.33) (xy 119.38 100.33)
 		)
 		(stroke
@@ -2338,6 +2358,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 118.11) (xy 99.06 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e9e25c5-3985-4428-8afe-f63f9c54d0b5")
+	)
+	(wire
+		(pts
 			(xy 44.45 92.71) (xy 45.72 92.71)
 		)
 		(stroke
@@ -2365,6 +2395,16 @@
 			(type default)
 		)
 		(uuid "8a0a4016-2f66-4519-ba5b-fbd0c975fd88")
+	)
+	(wire
+		(pts
+			(xy 125.73 60.96) (xy 125.73 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c239b99-a789-465b-a47d-ccf67b765de1")
 	)
 	(wire
 		(pts
@@ -2677,28 +2717,6 @@
 		)
 		(uuid "00965c4e-2f7b-4af6-b5b7-cb7b398159ce")
 	)
-	(hierarchical_label "TIP_NO1"
-		(shape input)
-		(at 100.33 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "27cd9e00-0553-477a-8c71-3baae724dba2")
-	)
-	(hierarchical_label "TIP_NO2"
-		(shape input)
-		(at 99.06 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "53f343f6-92b4-48a1-a8fd-3ebecaf4fc50")
-	)
 	(hierarchical_label "OUT1"
 		(shape output)
 		(at 24.13 43.18 180)
@@ -2800,7 +2818,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 59.69 0)
+		(at 125.73 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2808,7 +2826,7 @@
 		(dnp no)
 		(uuid "073251a0-6682-4277-a946-f8ec6f7a5775")
 		(property "Reference" "#PWR0133"
-			(at 125.73 66.04 0)
+			(at 125.73 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2817,7 +2835,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.7136 63.2772 0)
+			(at 123.7136 64.5472 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2826,7 +2844,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 59.69 0)
+			(at 125.73 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2835,7 +2853,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 59.69 0)
+			(at 125.73 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2844,7 +2862,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 59.69 0)
+			(at 125.73 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,6 +3421,96 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "RV7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100.33 52.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fdb18c4-a386-4099-8dd5-5b97f49f9687")
+		(property "Reference" "R37"
+			(at 97.79 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 102.87 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 102.108 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810182020_YAGEO-RC0603FR-071KL_C22548.pdf"
+			(at 100.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc#" "C14675"
+			(at 100.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mfg#" "RC0603FR-07100KL"
+			(at 100.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6836464b-30e0-4c94-ba91-521d7fcbe0d3")
+		)
+		(pin "2"
+			(uuid "17cd8eac-e394-48bd-850c-a973d9d8fde0")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "R38")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -4511,6 +4619,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C274688"
+			(at 21.59 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "4d9fac13-660a-4148-b136-3e60a8a620d9")
 		)
@@ -4659,6 +4776,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C274688"
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "94a95ec5-5ece-45c8-8878-e1a116edb2f2")
 		)
@@ -4676,6 +4802,75 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5418044-407f-4478-9446-89b1b9f7e315")
+		(property "Reference" "#PWR028"
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.0436 121.6972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40f3368f-cd75-448c-b04a-1ed083b4abf0")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "#PWR0148")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -4746,6 +4941,75 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 100.33 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b424c909-ee20-4483-a100-2dd7cef1c406")
+		(property "Reference" "#PWR0149"
+			(at 100.33 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 98.3136 64.5472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c5f023b-4dd2-4657-b3f1-3af079323112")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "#PWR0150")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -4843,7 +5107,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 116.84 0)
+		(at 124.46 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4851,7 +5115,7 @@
 		(dnp no)
 		(uuid "b8b5f8b8-6d69-41fb-9966-9915d1f1059c")
 		(property "Reference" "#PWR0135"
-			(at 124.46 123.19 0)
+			(at 124.46 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4860,7 +5124,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 122.4436 120.4272 0)
+			(at 122.4436 121.6972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4869,7 +5133,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 116.84 0)
+			(at 124.46 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4878,7 +5142,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 116.84 0)
+			(at 124.46 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4887,7 +5151,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 124.46 116.84 0)
+			(at 124.46 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5933,6 +6197,96 @@
 				)
 				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
 					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe2eb142-87e6-4698-92bc-7902eab96c74")
+		(property "Reference" "R39"
+			(at 96.52 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 101.6 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 100.838 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1810182020_YAGEO-RC0603FR-071KL_C22548.pdf"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "lcsc#" "C14675"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "mfg#" "RC0603FR-07100KL"
+			(at 99.06 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62cbdaa2-84f9-42b7-b411-97d3aa3750ad")
+		)
+		(pin "2"
+			(uuid "425c04bf-d436-4c8d-9f8d-beafdbb6a24e")
+		)
+		(instances
+			(project "eurorack-pmod-pcb"
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/62386825-0ccb-4e80-b3cc-940f31e07af6"
+					(reference "R40")
+					(unit 1)
+				)
+				(path "/d1469efb-590b-4a61-a37b-5bbc286936ba/ee8a9905-d244-4108-aba7-f2ec5b742432"
+					(reference "R39")
 					(unit 1)
 				)
 			)
