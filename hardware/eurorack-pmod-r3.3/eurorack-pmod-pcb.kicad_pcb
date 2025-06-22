@@ -20156,7 +20156,7 @@
 		(path "/04b0c562-7287-43d3-9594-fcf167d8f492/4640a29a-4498-4ee0-ac72-4e8b64dd1190")
 		(sheetname "/vref/")
 		(sheetfile "vref.kicad_sch")
-		(attr smd exclude_from_pos_files exclude_from_bom)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.153641 -0.38)
 			(end 0.153641 -0.38)
@@ -33964,7 +33964,7 @@
 		(path "/04b0c562-7287-43d3-9594-fcf167d8f492/5439b00f-799e-4f9d-a6b5-87cbdc8c328a")
 		(sheetname "/vref/")
 		(sheetfile "vref.kicad_sch")
-		(attr smd exclude_from_pos_files exclude_from_bom)
+		(attr smd exclude_from_pos_files exclude_from_bom dnp)
 		(fp_line
 			(start -0.153641 -0.38)
 			(end 0.153641 -0.38)
