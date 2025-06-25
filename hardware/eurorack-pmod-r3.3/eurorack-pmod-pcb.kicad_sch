@@ -4389,17 +4389,6 @@
 		)
 		(uuid "098dd55a-6706-4001-b1ea-8f6ae5bb6622")
 	)
-	(text "2ND PCA9557 on the MUX"
-		(exclude_from_sim no)
-		(at 17.145 121.285 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e73db3c-fa5f-47eb-b1c4-7942c11e23b4")
-	)
 	(text "Note: footprint is SOT-23-6, but\nSOT-23-5 and SOT-23-6 variants\n24AA02UID and 24AA025UID both fit."
 		(exclude_from_sim no)
 		(at 252.73 165.1 0)
@@ -4435,17 +4424,6 @@
 			(justify left bottom)
 		)
 		(uuid "3f8aa5f6-2428-48ff-9c89-a2da27aa3e98")
-	)
-	(text "ADS1110 I2C ADC\nhttps://www.lcsc.com/product-detail/\nAnalog-To-Digital-Converters-ADCs_Texas-Instruments-ADS1110A0IDBVR_C16598.html"
-		(exclude_from_sim no)
-		(at 17.145 114.935 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "42872f88-97e9-4274-8bf0-9afd6d05e9f6")
 	)
 	(text "i2caddr: 0x30"
 		(exclude_from_sim no)
@@ -4533,17 +4511,6 @@
 		)
 		(uuid "d846d308-6d91-41da-871b-9f23df699b85")
 	)
-	(text "MCP3021 (ref straight from VDD?)"
-		(exclude_from_sim no)
-		(at 17.145 118.11 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e519584d-2cab-46fd-9ed7-d7f9dfe69d72")
-	)
 	(text "-12V control needed"
 		(exclude_from_sim no)
 		(at 257.556 99.06 0)
@@ -4553,30 +4520,6 @@
 			)
 		)
 		(uuid "ed102951-7086-4b5e-8a76-3412cfe88f6c")
-	)
-	(text "Is self-cal really necessary with a good test jig?"
-		(exclude_from_sim no)
-		(at 17.145 123.825 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f0106e1d-9707-4576-abe5-00a1b59dc7ab")
-	)
-	(text "DG409 MUX (must be 12V capable!)"
-		(exclude_from_sim no)
-		(at 17.145 109.855 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f1c88747-298a-49d5-8fb3-1cc2cc7fa4df")
 	)
 	(text "i2caddr: 0x0A"
 		(exclude_from_sim no)
@@ -7037,7 +6980,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "560R"
+		(property "Value" "470R"
 			(at 226.06 105.41 90)
 			(effects
 				(font

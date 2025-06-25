@@ -1200,28 +1200,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: Adjust for 3.0 -> 3.3V transition\nTODO: reduce input impedance?"
-		(exclude_from_sim no)
-		(at 111.252 38.354 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "059efb6b-4d2e-4e00-b02c-3c88aaf61bc4")
-	)
-	(text "402K =>\n~80.1K (eff) (top)\nVCOM == 1.66V\n\nValue taken by statistics across a lot of AK4619s"
-		(exclude_from_sim no)
-		(at 112.014 69.596 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "78af81e9-eea1-44b7-9902-cfe1209344b2")
-	)
 	(text "~1.5V"
 		(exclude_from_sim no)
 		(at 123.19 52.705 0)
@@ -2027,7 +2005,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "402K"
+		(property "Value" "X.X"
 			(at 118.11 41.783 90)
 			(effects
 				(font
@@ -2062,7 +2040,7 @@
 				)
 			)
 		)
-		(property "lcsc#" "C327345"
+		(property "lcsc#" ""
 			(at 118.11 44.45 0)
 			(effects
 				(font
@@ -2071,7 +2049,7 @@
 				(hide yes)
 			)
 		)
-		(property "mfg#" "RC0402FR-07402KL"
+		(property "mfg#" ""
 			(at 118.11 44.45 0)
 			(effects
 				(font
