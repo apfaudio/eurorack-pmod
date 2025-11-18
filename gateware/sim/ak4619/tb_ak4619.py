@@ -16,7 +16,7 @@ async def test_ak4619_00(dut):
     TEST_L1 = 0xDEAD0000
     TEST_R1 = 0xBEEF0000
 
-    clk_256fs = Clock(dut.clk_256fs, 83, units='ns')
+    clk_256fs = Clock(dut.clk_256fs, 83, unit='ns')
     cocotb.start_soon(clk_256fs.start())
 
     dut.sample_in0.value = Force(0)
@@ -47,10 +47,10 @@ async def test_ak4619_00(dut):
     await FallingEdge(dut.strobe)
 
     print("Data clocked from sdout1 present at sample_outX:")
-    print(hex(dut.sample_out0.value.integer))
-    print(hex(dut.sample_out1.value.integer))
-    print(hex(dut.sample_out2.value.integer))
-    print(hex(dut.sample_out3.value.integer))
+    print(hex(int(dut.sample_out0.value)))
+    print(hex(int(dut.sample_out1.value)))
+    print(hex(int(dut.sample_out2.value)))
+    print(hex(int(dut.sample_out3.value)))
 
     assert dut.sample_out0.value == TEST_L0 >> 16
     assert dut.sample_out1.value == TEST_R0 >> 16

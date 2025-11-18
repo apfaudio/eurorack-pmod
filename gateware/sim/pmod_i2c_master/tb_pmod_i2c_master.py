@@ -7,7 +7,7 @@ async def i2c_clock_in_byte(sda, scl, invert):
     byte = 0x00
     for i in range(8):
         await (FallingEdge(scl) if invert else RisingEdge(scl))
-        sda_val = sda.value.integer
+        sda_val = int(sda.value)
         if invert:
             sda_val = 0 if sda_val else 1
         byte |= sda_val << (8-i)
@@ -17,7 +17,7 @@ async def i2c_clock_in_byte(sda, scl, invert):
 @cocotb.test()
 async def test_i2cinit_00(dut):
 
-    clock = Clock(dut.clk, 83, units='ns')
+    clock = Clock(dut.clk, 83, unit='ns')
     cocotb.start_soon(clock.start())
 
     dut.rst.value = 1
