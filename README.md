@@ -2,7 +2,7 @@
 
 # Eurorack PMOD
 
-**Eurorack PMOD** is a [certified open hardware](https://certification.oshwa.org/de000135.html) Eurorack module that plugs directly into many FPGA boards, which makes it easy to combine the world of FPGAs and [hardware electronic music synthesis](https://en.wikipedia.org/wiki/Eurorack). The latest (R3.3) hardware looks like this:
+**Eurorack PMOD** is a [certified open hardware](https://certification.oshwa.org/de000135.html) Eurorack module that plugs directly into many FPGA boards, which makes it easy to combine the world of FPGAs and [hardware electronic music synthesis](https://en.wikipedia.org/wiki/Eurorack). It looks like this:
 
 ![assembled eurorack-pmod module R3.3 (front)](docs/img/r33_panel.jpg)
 ![assembled eurorack-pmod module R3.3 (top)](docs/img/r33_top.jpg)
@@ -21,6 +21,14 @@
 - **[`apu_chord` core](https://github.com/proppy/eurorack-pmod/tree/apu_chord)** - (from [proppy@](https://github.com/proppy))
 - **[Real-time DSP with Rust on LiteX](https://github.com/apfaudio/eurorack-pmod-litex)** - mostly in Rust/Migen.
 
+# R3.5 hardware details
+
+Some minor improvements over R3.3, with the following changes:
+- Additional output mute stage: 4 JFETs controlled by the `^MUTE` pin (`PDN` pin was removed and renamed to `^MUTE` - semantics are the same as before - HIGH is unmuted).
+- Improved noise performance and DC tracking by adding an additional onboard 3.3V regulator for the analog domain.
+- Touch IC switched from 8-channel to 16-channel version, so that the XRESET pin is not shared with one of the touch jacks.
+
+*Note: At this time, this Verilog repo is a bit out of date and refers to R3.3 everywhere, although I am shipping R3.5. The hardware is fully backward compatible besides the touch sensor mapping, so if you compile bitstreams for R3.3, they will work on R3.5. [See here for more details](https://apfaudio.github.io/tiliqua/quickstart/tlq_expander.html).*
 
 # R3.3 hardware details
 
@@ -35,10 +43,6 @@
 - Calibration EEPROM for unique ID and storing calibration data.
 - [new!] Touch and proximity sensing on all unused jacks as an extra input method.
     - See the `gateware/cores/touch_cv.sv` core for an example of how to use this.
-
-**Compared to R3.1, the changes across R3.2 and R3.3 [are summarized here](https://github.com/apfaudio/eurorack-pmod/issues/50)**
-
-[Want one?](#manufacturing). More photos can be found [below](#photos).
 
 ## Included examples
 This repository contains a bunch of example DSP cores which are continuously being updated:
@@ -139,7 +143,6 @@ From the gateware perspective, there is almost no difference between R3.1 and R3
 - Jack insertion detection on input & output jacks.
 - Calibration EEPROM for unique ID and storing calibration data.
 - I/O is about +/- 8V capable, wider is possible with a resistor change.
-
 
 ## Known limitations
 - Moved to github issues
