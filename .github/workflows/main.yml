@@ -11,7 +11,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R31 BOARD=icebreaker CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-icebreaker.bin
           path: gateware/build/icebreaker/top.bin
@@ -24,7 +24,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=icebreaker CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-icebreaker.bin
           path: gateware/build/icebreaker/top.bin
@@ -37,7 +37,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=icesugar CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-icesugar.bin
           path: gateware/build/icesugar/top.bin
@@ -50,7 +50,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=icebreaker CORE=touch_cv TOUCH=TOUCH_SENSE_ENABLED -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-icebreaker.bin
           path: gateware/build/icebreaker/top.bin
@@ -74,7 +74,7 @@ jobs:
           export PATH=$PATH:$RUNNER_TEMP/oss-cad-suite/lib
           yosys --version
           make HW_REV=HW_R33 BOARD=icebreaker CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: windows-build-icebreaker.bin
           path: gateware/build/icebreaker/top.bin
@@ -88,7 +88,7 @@ jobs:
       - run: |
           yosys --version
           make HW_REV=HW_R33 BOARD=icebreaker CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: macos-build-icebreaker.bin
           path: gateware/build/icebreaker/top.bin
@@ -101,7 +101,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=colorlight_i5 CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-colorlight-i5.bin
           path: gateware/build/colorlight_i5/top.bin
@@ -114,7 +114,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=colorlight_i9 CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-colorlight-i9.bin
           path: gateware/build/colorlight_i9/top.bin
@@ -127,7 +127,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=ecpix5 CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-ecpix-5.bin
           path: gateware/build/ecpix5/top.bin
@@ -140,7 +140,7 @@ jobs:
       - run: git submodule update --init gateware/external/no2misc
       - run: yosys --version
       - run: make HW_REV=HW_R33 BOARD=pico_ice CORE=mirror -C gateware
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ubuntu-build-pico-ice.bin
           path: gateware/build/pico_ice/top.bin
