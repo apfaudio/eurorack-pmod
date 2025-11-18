@@ -4,8 +4,7 @@
 
 **Eurorack PMOD** is a [certified open hardware](https://certification.oshwa.org/de000135.html) Eurorack module that plugs directly into many FPGA boards, which makes it easy to combine the world of FPGAs and [hardware electronic music synthesis](https://en.wikipedia.org/wiki/Eurorack). It looks like this:
 
-![assembled eurorack-pmod module R3.3 (front)](docs/img/r33_panel.jpg)
-![assembled eurorack-pmod module R3.3 (top)](docs/img/r33_top.jpg)
+<img width="2183" height="1573" alt="image" src="https://github.com/user-attachments/assets/27b75e4f-beb9-4862-b480-0f0f79896e53" />
 
 ## How does it work? ([tutorial video](https://youtu.be/TcqFej9GK8U))
 - Plug eurorack-pmod into an FPGA development board of your choice. Here is a list of [boards already supported by the examples](gateware/boards).
