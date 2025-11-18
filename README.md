@@ -1,15 +1,18 @@
 ![ci workflow](https://github.com/schnommus/eurorack-pmod/actions/workflows/main.yml/badge.svg)
 
+*Note: this repository contains Verilog examples for using Eurorack-PMOD with different FPGA boards. If you are trying to pair it with Tiliqua or Amaranth HDL, see the [quickstart guide there](https://apfaudio.github.io/tiliqua/quickstart/tlq_expander.html)*
+
 # Eurorack PMOD
 
-**Eurorack PMOD** is a [certified open hardware](https://certification.oshwa.org/de000135.html) Eurorack module that plugs directly into many FPGA boards, which makes it easy to combine the world of FPGAs and [hardware electronic music synthesis](https://en.wikipedia.org/wiki/Eurorack). It looks like this:
+**Eurorack PMOD** is an [open hardware](https://certification.oshwa.org/de000135.html) Eurorack module that plugs directly into many FPGA boards, which makes it easy to combine the world of FPGAs and [hardware electronic music synthesis](https://en.wikipedia.org/wiki/Eurorack).
+
+The hardware looks like this:
 
 <img width="2183" height="1573" alt="image" src="https://github.com/user-attachments/assets/8cb7a677-d871-463e-a0d5-23c9fc7db719" />
 
 ## How does it work? ([tutorial video](https://youtu.be/TcqFej9GK8U))
 - Plug eurorack-pmod into an FPGA development board of your choice. Here is a list of [boards already supported by the examples](gateware/boards).
 - Get started with some [example DSP cores](gateware/cores). Examples include calibration, sampling, effects, synthesis sources and so on. The design files can be synthesized to a bitstream using Yosys' [oss-cad-suite](https://github.com/YosysHQ/oss-cad-suite-build).
-
 
 ## :notes: Project Showcase :sparkles:
 
