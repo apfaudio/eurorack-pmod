@@ -13,7 +13,7 @@ jobs:
       - run: make HW_REV=HW_R31 BOARD=icebreaker CORE=mirror -C gateware
       - uses: actions/upload-artifact@v4
         with:
-          name: ubuntu-build-icebreaker.bin
+          name: ubuntu-build-icebreaker-r31.bin
           path: gateware/build/icebreaker/top.bin
 
   ubuntu-build-icebreaker-r33:
@@ -26,7 +26,7 @@ jobs:
       - run: make HW_REV=HW_R33 BOARD=icebreaker CORE=mirror -C gateware
       - uses: actions/upload-artifact@v4
         with:
-          name: ubuntu-build-icebreaker.bin
+          name: ubuntu-build-icebreaker-r33.bin
           path: gateware/build/icebreaker/top.bin
 
   ubuntu-build-icesugar-r33:
@@ -52,7 +52,7 @@ jobs:
       - run: make HW_REV=HW_R33 BOARD=icebreaker CORE=touch_cv TOUCH=TOUCH_SENSE_ENABLED -C gateware
       - uses: actions/upload-artifact@v4
         with:
-          name: ubuntu-build-icebreaker.bin
+          name: ubuntu-build-icebreaker-r33-touch.bin
           path: gateware/build/icebreaker/top.bin
 
   windows-build-icebreaker:
