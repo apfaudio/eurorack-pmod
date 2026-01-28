@@ -20,7 +20,11 @@ module pmod_i2c_master #(
     , parameter LED_CFG  = "drivers/pca9635-cfg.hex"
     , parameter LED_CFG_BYTES = 16'd26
 `ifdef TOUCH_SENSE_ENABLED
+`ifdef HW_R35
+    , parameter TOUCH_CFG  = "drivers/cy8cmbr3108-cfg-r35.hex"
+`else
     , parameter TOUCH_CFG  = "drivers/cy8cmbr3108-cfg.hex"
+`endif
     , parameter TOUCH_CFG_BYTES = 16'd130 // 0x80 + 2
 `endif
 )(
@@ -89,7 +93,12 @@ localparam I2C_DELAY1        = 0,
 `ifdef COCOTB_SIM
 localparam STARTUP_DELAY_BIT = 4;
 `else
+`ifdef HW_R35
+// HW R3.5 requires longer startup delay (~1.5s due to reset supervisor chip)
+localparam STARTUP_DELAY_BIT = 24;
+`else
 localparam STARTUP_DELAY_BIT = 17;
+`endif
 `endif
 
 logic [3:0] i2c_state = I2C_DELAY1;
@@ -135,7 +144,7 @@ logic       err_out;
 logic       ready;
 
 // Used for startup delay.
-logic [23:0] delay_cnt;
+logic [24:0] delay_cnt;
 
 // **Used for indicating POR failure of touch IC.**
 // Mitigation for `issues/59`: if CS2 of touch sense IC is shorted to ground
@@ -209,6 +218,8 @@ always_ff @(posedge clk) begin
                             eeprom_serial[32-3*8-1:32-4*8] <= data_out;
                             cmd <= I2CMASTER_STOP;
 `ifdef HW_R33
+                            i2c_state <= I2C_INIT_TOUCH1;
+`elsif HW_R35
                             i2c_state <= I2C_INIT_TOUCH1;
 `else
                             // For R31, don't try initializing touch sense
@@ -554,16 +565,29 @@ always_ff @(posedge clk) begin
                                 i2c_state <= I2C_LED1;
                                 cmd <= I2CMASTER_STOP;
                             end else begin
+`ifdef HW_R35
+                                case (nsensor)
+                                    0: data_in <= 8'hC4;
+                                    1: data_in <= 8'hC8;
+                                    2: data_in <= 8'hCA;
+                                    3: data_in <= 8'hCC;
+                                    4: data_in <= 8'hCE;
+                                    5: data_in <= 8'hD0;
+                                    6: data_in <= 8'hD2;
+                                    7: data_in <= 8'hD4;
+                                endcase
+`else
                                 case (nsensor)
                                     0: data_in <= 8'hBA;
                                     1: data_in <= 8'hBC;
                                     2: data_in <= 8'hBE;
                                     3: data_in <= 8'hC0;
-                                    4: data_in <= 8'hC2;
-                                    5: data_in <= 8'hC4;
-                                    6: data_in <= 8'hC6;
-                                    7: data_in <= 8'hC8;
+                                    4: data_in <= 8'hC8;
+                                    5: data_in <= 8'hC6;
+                                    6: data_in <= 8'hC4;
+                                    7: data_in <= 8'hC2;
                                 endcase
+`endif
                             end
                         end
                         3: cmd <= I2CMASTER_STOP;
@@ -589,11 +613,10 @@ always_ff @(posedge clk) begin
                                 1: touch1 <= data_out;
                                 2: touch2 <= data_out;
                                 3: touch3 <= data_out;
-                                // R3.3 hw swaps last four vs R3.2 to improve PCB routing
-                                4: touch7 <= data_out;
-                                5: touch6 <= data_out;
-                                6: touch5 <= data_out;
-                                7: touch4 <= data_out;
+                                4: touch4 <= data_out;
+                                5: touch5 <= data_out;
+                                6: touch6 <= data_out;
+                                7: touch7 <= data_out;
                             endcase
                             cmd <= I2CMASTER_STOP;
                             i2c_state <= I2C_LED1;

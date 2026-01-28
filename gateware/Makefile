@@ -1,6 +1,6 @@
 ALL_BOARDS = $(shell ls boards)
 ALL_CORES = $(shell basename --suffix=.sv -- cores/*.sv)
-ALL_HW_REV = "HW_R31 HW_R33"
+ALL_HW_REV = "HW_R31 HW_R33 HW_R35"
 ALL_TOUCH = "TOUCH_SENSE_DISABLED TOUCH_SENSE_ENABLED"
 
 CORE ?= mirror

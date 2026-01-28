@@ -18,7 +18,9 @@
 
 module cal #(
     parameter W = 16, // sample width
-`ifdef HW_R33
+`ifdef HW_R35
+    parameter CAL_MEM_FILE = "cal/cal_mem_default_r35.hex"
+`elsif HW_R33
     parameter CAL_MEM_FILE = "cal/cal_mem_default_r33.hex"
 `else
     parameter CAL_MEM_FILE = "cal/cal_mem_default_r31.hex"
