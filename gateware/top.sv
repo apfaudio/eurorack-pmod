@@ -85,6 +85,12 @@ logic signed [W-1:0] debug_adc1;
 logic signed [W-1:0] debug_adc2;
 logic signed [W-1:0] debug_adc3;
 
+// Internal signals for I2S interface (after IO regs).
+logic pmod_lrck_int;
+logic pmod_bick_int;
+logic pmod_sdin1_int;
+logic pmod_sdout1_int;
+
 // PLL bringup and reset state management / debouncing.
 sysmgr sysmgr_instance (
 `ifndef INTERNAL_CLOCK
@@ -147,6 +153,11 @@ TRELLIS_IO #(.DIR("BIDIR")) i2c_tristate_sda (
     .B(PMOD_I2C_SDA),
     .O(i2c_sda_i)
 );
+// ECP5 IO regs for I2S signals.
+OFS1P3DX ofs_bick   (.D(pmod_bick_int),  .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(PMOD_BICK));
+OFS1P3DX ofs_lrck   (.D(pmod_lrck_int),  .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(PMOD_LRCK));
+OFS1P3DX ofs_sdin1  (.D(pmod_sdin1_int), .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(PMOD_SDIN1));
+IFS1P3DX ifs_sdout1 (.D(PMOD_SDOUT1),    .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(pmod_sdout1_int));
 `endif
 `else
 // For iCE40 this is not necessary.
@@ -154,6 +165,17 @@ assign PMOD_I2C_SCL = i2c_scl_oe ? 1'b0 : 1'bz;
 assign PMOD_I2C_SDA = i2c_sda_oe ? 1'b0 : 1'bz;
 assign i2c_scl_i = PMOD_I2C_SCL;
 assign i2c_sda_i = PMOD_I2C_SDA;
+`ifndef VERILATOR_LINT_ONLY
+// ICE40 IO regs for I2S signals.
+SB_IO #(.PIN_TYPE(6'b110101)) sb_io_bick (
+    .PACKAGE_PIN(PMOD_BICK), .OUTPUT_CLK(clk_256fs), .D_OUT_0(pmod_bick_int), .OUTPUT_ENABLE(1'b1));
+SB_IO #(.PIN_TYPE(6'b110101)) sb_io_lrck (
+    .PACKAGE_PIN(PMOD_LRCK), .OUTPUT_CLK(clk_256fs), .D_OUT_0(pmod_lrck_int), .OUTPUT_ENABLE(1'b1));
+SB_IO #(.PIN_TYPE(6'b110101)) sb_io_sdin1 (
+    .PACKAGE_PIN(PMOD_SDIN1), .OUTPUT_CLK(clk_256fs), .D_OUT_0(pmod_sdin1_int), .OUTPUT_ENABLE(1'b1));
+SB_IO #(.PIN_TYPE(6'b000000)) sb_io_sdout1 (
+    .PACKAGE_PIN(PMOD_SDOUT1), .INPUT_CLK(clk_256fs), .D_IN_0(pmod_sdout1_int));
+`endif
 `endif
 
 eurorack_pmod #(
@@ -169,10 +191,10 @@ eurorack_pmod #(
     .i2c_sda_i (i2c_sda_i),
     .pdn    (PMOD_PDN),
     .mclk   (PMOD_MCLK),
-    .sdin1  (PMOD_SDIN1),
-    .sdout1 (PMOD_SDOUT1),
-    .lrck   (PMOD_LRCK),
-    .bick   (PMOD_BICK),
+    .sdin1  (pmod_sdin1_int),
+    .sdout1 (pmod_sdout1_int),
+    .lrck   (pmod_lrck_int),
+    .bick   (pmod_bick_int),
 
     .cal_in0      (in0),
     .cal_in1      (in1),

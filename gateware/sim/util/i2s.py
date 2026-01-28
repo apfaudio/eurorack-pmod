@@ -4,11 +4,18 @@ from cocotb.clock import Clock
 from cocotb.triggers import Timer, FallingEdge, RisingEdge, ClockCycles
 from cocotb.handle import Force, Release
 
-async def i2s_clock_out_u32(bick, sdout, word):
+async def i2s_clock_out_u32(bick, sdout, word, ioreg_delay=False):
     """Clock out a 32-bit word over I2S."""
-    for i in range(32):
-        await RisingEdge(bick)
-        sdout.value = (word >> (0x1F-i)) & 1
+    if ioreg_delay:
+        sdout.value = (word >> 0x1F) & 1
+        for i in range(32):
+            await RisingEdge(bick)
+            if i >= 2:
+                sdout.value = (word >> (0x20-i)) & 1
+    else:
+        for i in range(32):
+            await RisingEdge(bick)
+            sdout.value = (word >> (0x1F-i)) & 1
 
 async def i2s_clock_in_u32(bick, sdin):
     """Clock in a 32-bit word over I2S."""

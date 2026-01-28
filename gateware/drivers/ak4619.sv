@@ -93,8 +93,10 @@ always_ff @(posedge clk_256fs) begin
         // BICK transition HI -> LO: Clock in W bits
         // On HI -> LO both SDIN and SDOUT do not transition.
         // (determined by AK4619 transition polarity register BCKP)
-        if (bit_counter < W) begin
-            adc_words[channel][W - bit_counter - 1] <= sdout1;
+        //
+        // 1-bit offset comes from IO reg on sdout1 pin (1 cycle delay)
+        if ((bit_counter > 0) && (bit_counter <= W)) begin
+            adc_words[channel][W - bit_counter] <= sdout1;
         end
         clkdiv <= clkdiv + 1;
     end else begin // BICK: LO -> HI

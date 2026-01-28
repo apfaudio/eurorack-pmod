@@ -39,10 +39,10 @@ async def test_ak4619_00(dut):
     dut.rst.value = 0
 
     cocotb.start_soon(strobe())
-    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_L0)
-    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_R0)
-    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_L1)
-    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_R1)
+    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_L0, ioreg_delay=True)
+    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_R0, ioreg_delay=True)
+    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_L1, ioreg_delay=True)
+    await i2s_clock_out_u32(dut.bick, dut.sdout1, TEST_R1, ioreg_delay=True)
 
     await FallingEdge(dut.strobe)
 
