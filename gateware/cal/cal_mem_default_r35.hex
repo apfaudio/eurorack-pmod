@@ -1,4 +1,4 @@
-// Input calibration constants (R3.5 defaults)
-@00000000 60 4fd 60 4fd 60 4fd 60 4fd
-// Output calibration constants (R3.5 defaults)
-@00000008 0 399 0 399 0 399 0 399
+// Input calibration constants
+@00000000 380 500 380 500 380 500 380 500
+// Output calibration constants
+@00000008 80 398 80 398 80 398 80 398
