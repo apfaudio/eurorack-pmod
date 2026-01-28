@@ -30,7 +30,7 @@ Some minor improvements over R3.3, with the following changes:
 - Improved noise performance and DC tracking by adding an additional onboard 3.3V regulator for the analog domain.
 - Touch IC switched from 8-channel to 16-channel version, so that the XRESET pin is not shared with one of the touch jacks.
 
-*Note: At this time, this Verilog repo is a bit out of date and refers to R3.3 everywhere, although I am shipping R3.5. The hardware is fully backward compatible besides the touch sensor mapping, so if you compile bitstreams for R3.3, they will work on R3.5. [See here for more details](https://apfaudio.github.io/tiliqua/quickstart/tlq_expander.html).*
+*Note: At this time, this Verilog repo is a bit out of date and refers to R3.3 in a few places, although I am shipping R3.5. I have tested this repository also on R3.5, just make sure to compile with `HW_R35`. [See here for more details](https://apfaudio.github.io/tiliqua/quickstart/tlq_expander.html).*
 
 # R3.3 hardware details
 
@@ -119,7 +119,7 @@ The project is split into 2 directories, [`hardware`](hardware) for the PCB/pane
 
 # R3.1 Hardware (no longer manufactured)
 
-The above README focuses on R3.3, which is currently being manufactured.
+The above README focuses on R3.3/R3.5, which is currently being manufactured.
 
 Revision R3.1 was sold out in 2023. It's no longer manufactured, however this repository still supports it if you use the `HW_REV=HW_R31` flag when building. I left some of the old photos here in case they are useful.
 

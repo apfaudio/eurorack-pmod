@@ -55,6 +55,32 @@ jobs:
           name: ubuntu-build-icebreaker-r33-touch.bin
           path: gateware/build/icebreaker/top.bin
 
+  ubuntu-build-icebreaker-r35:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: YosysHQ/setup-oss-cad-suite@v3
+      - run: git submodule update --init gateware/external/no2misc
+      - run: yosys --version
+      - run: make HW_REV=HW_R35 BOARD=icebreaker CORE=mirror -C gateware
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu-build-icebreaker-r35.bin
+          path: gateware/build/icebreaker/top.bin
+
+  ubuntu-build-icebreaker-r35-touch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: YosysHQ/setup-oss-cad-suite@v3
+      - run: git submodule update --init gateware/external/no2misc
+      - run: yosys --version
+      - run: make HW_REV=HW_R35 BOARD=icebreaker CORE=touch_cv TOUCH=TOUCH_SENSE_ENABLED -C gateware
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu-build-icebreaker-r35-touch.bin
+          path: gateware/build/icebreaker/top.bin
+
   windows-build-icebreaker:
     runs-on: windows-latest
     defaults:
