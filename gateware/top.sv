@@ -20,6 +20,11 @@ module top #(
     input   PMOD_SDOUT1,
     output  PMOD_PDN,
     output  PMOD_MCLK,
+`ifdef PDN_CLK
+    // Tiliqua platform has a D-flip-flop on PDN for muting
+    // This must be clocked on this platform.
+    output  FFC_PDN_CLK,
+`endif
     // Button used for reset and output cal. Assumed momentary, pressed == HIGH.
     // You can use any random PMOD that has a button on it.
     input   RESET_BUTTON,
@@ -176,6 +181,10 @@ SB_IO #(.PIN_TYPE(6'b110101)) sb_io_sdin1 (
 SB_IO #(.PIN_TYPE(6'b000000)) sb_io_sdout1 (
     .PACKAGE_PIN(PMOD_SDOUT1), .INPUT_CLK(clk_256fs), .D_IN_0(pmod_sdout1_int));
 `endif
+`endif
+
+`ifdef PDN_CLK
+assign FFC_PDN_CLK = pmod_lrck_int;
 `endif
 
 eurorack_pmod #(
