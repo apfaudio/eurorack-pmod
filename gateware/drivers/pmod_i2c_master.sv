@@ -523,7 +523,12 @@ always_ff @(posedge clk) begin
                                 cmd <= I2CMASTER_READ;
                             end else begin
                                 cmd <= I2CMASTER_STOP;
+`ifdef TOUCH_SENSE_ENABLED
                                 i2c_state <= I2C_TOUCH_SCAN1;
+`else
+                            i2c_state <= I2C_LED1;
+`endif
+
                             end
                         end
                         // 4) Save the result.
