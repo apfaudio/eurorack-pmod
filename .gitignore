@@ -26,3 +26,9 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
+
+# Gateware build artefacts (Yosys / nextpnr-xilinx)
+*.json
+*.fasm
+*.frames
+*.bit

@@ -164,8 +164,39 @@ OFS1P3DX ofs_lrck   (.D(pmod_lrck_int),  .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0),
 OFS1P3DX ofs_sdin1  (.D(pmod_sdin1_int), .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(PMOD_SDIN1));
 IFS1P3DX ifs_sdout1 (.D(PMOD_SDOUT1),    .SP(1'b1), .SCLK(clk_256fs), .CD(1'b0), .Q(pmod_sdout1_int));
 `endif
+
 `else
-// For iCE40 this is not necessary.
+`ifdef XILINX
+`ifndef VERILATOR_LINT_ONLY
+// Xilinx: explicit IOBUF rather than inferred from the generic 1'bz
+// idiom. Confirmed on real hardware, 21 Aug 2026: the inferred path
+// synthesises to a real IOBUF with no error, but SCL never actually
+// toggled on silicon. Explicit instantiation avoids Yosys's own
+// flagged "limited support for tri-state logic" codepath entirely.
+IOBUF iobuf_scl (.O(i2c_scl_i), .IO(PMOD_I2C_SCL), .I(1'b0), .T(~i2c_scl_oe));
+IOBUF iobuf_sda (.O(i2c_sda_i), .IO(PMOD_I2C_SDA), .I(1'b0), .T(~i2c_sda_oe));
+`endif
+// Plain fabric flip-flops for the I2S signals, NOT ODDR/IDDR.
+// ODDR/IDDR were tried first, to place the registers in the IOB the way
+// OFS1P3DX and SB_IO do on the other vendors. On hardware, 22 Aug 2026,
+// SDOUT1 read as constant zero while a scope showed real ADC data on the
+// wire, so openXC7's ILOGIC/OLOGIC DDR configuration is not trustworthy
+// here. IOB placement buys nothing at these clock rates anyway: one
+// clk_256fs period is 160 ns.
+logic pmod_bick_reg;
+logic pmod_lrck_reg;
+logic pmod_sdin1_reg;
+always_ff @(posedge clk_256fs) begin
+    pmod_bick_reg   <= pmod_bick_int;
+    pmod_lrck_reg   <= pmod_lrck_int;
+    pmod_sdin1_reg  <= pmod_sdin1_int;
+    pmod_sdout1_int <= PMOD_SDOUT1;
+end
+assign PMOD_BICK  = pmod_bick_reg;
+assign PMOD_LRCK  = pmod_lrck_reg;
+assign PMOD_SDIN1 = pmod_sdin1_reg;
+`else
+// Generic tristate idiom, ICE40 only now, unchanged from what already worked.
 assign PMOD_I2C_SCL = i2c_scl_oe ? 1'b0 : 1'bz;
 assign PMOD_I2C_SDA = i2c_sda_oe ? 1'b0 : 1'bz;
 assign i2c_scl_i = PMOD_I2C_SCL;
@@ -180,6 +211,7 @@ SB_IO #(.PIN_TYPE(6'b110101)) sb_io_sdin1 (
     .PACKAGE_PIN(PMOD_SDIN1), .OUTPUT_CLK(clk_256fs), .D_OUT_0(pmod_sdin1_int), .OUTPUT_ENABLE(1'b1));
 SB_IO #(.PIN_TYPE(6'b000000)) sb_io_sdout1 (
     .PACKAGE_PIN(PMOD_SDOUT1), .INPUT_CLK(clk_256fs), .D_IN_0(pmod_sdout1_int));
+`endif
 `endif
 `endif
 
